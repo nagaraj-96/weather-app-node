@@ -7,7 +7,7 @@ document.querySelector('form').addEventListener('submit', (eve) => {
 
     msg_1.textContent = 'Fetching forecase information...'
     msg_2.textContent = ''
-    fetch('http://localhost:3000/weather?search='+getPlace.value).then((response) =>{
+    fetch('/weather?search='+getPlace.value).then((response) =>{
     response.json().then((data) => {
        if(data.error){
             msg_1.textContent = data.error
