@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link href="/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/css/style.css" rel="stylesheet" />
+       
+
+    </head>
+     <h1>Weather</h1>
+    <body class="container">
+       
+         {{>header}}
+        </body></br>
+
+<form>
+      <input type="text" class="form-control" name = "placename" placeholder="Enter city name" aria-label="Recipient's username" aria-describedby="basic-addon2"></br>
+      <button class="btn btn-primary">Search</button>
+</form>
+
+<p id="message-1"></p>
+<p id="message-2"></p>
+        </br>
+    </body>
+    {{>footer}}
+
+ <script src="/js/app.js"> </script>
+    
+</html>
